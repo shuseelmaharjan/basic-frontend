@@ -1,0 +1,43 @@
+.services {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.services h1 {
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+table td {
+    background-color: #fff;
+    color: #555;
+}
+
+table h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+table p {
+    color: #666;
+    line-height: 1.6;
+}

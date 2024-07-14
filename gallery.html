@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The British College</title>
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="top-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                            <span>01-4535634</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span>info@britishcollege.com.np</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navlist">
+            <div class="container">
+                <div class="col">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="programs">Programs</button>
+                <button class="filter-btn" data-filter="college">College</button>
+                <button class="filter-btn" data-filter="students">Students</button>
+            </div>
+            <div class="gallery-items">
+                <div class="gallery-item" data-category="programs">
+                    <img src="./images/image1.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="programs">
+                    <img src="./images/image2.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="college">
+                    <img src="./images/image3.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="college">
+                    <img src="./images/collete-1.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="college">
+                    <img src="./images/college-2.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="college">
+                    <img src="./images/college-3.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="students">
+                    <img src="./images/image4.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="students">
+                    <img src="./images/student-1.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="students">
+                    <img src="./images/student-2.jpg" alt="image">
+                </div>
+                <div class="gallery-item" data-category="students">
+                    <img src="./images/student-3.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="about.html" class="btn">Read More</a>
+                </div>
+                <div class="col">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Contact Info</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> info@britishcollege.com.np</li>
+                        <li><i class="fa-solid fa-phone"></i> 01-4535634</li>
+                        <li><i class="fa-solid fa-map-marker"></i> Kathmandu, Nepal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                filterBtns.forEach(button => button.classList.remove('active'));
+                btn.classList.add('active');
+
+                galleryItems.forEach(item => {
+                    const category = item.dataset.category;
+
+                    if (filter === 'all' || filter === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

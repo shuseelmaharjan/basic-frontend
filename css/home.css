@@ -1,0 +1,227 @@
+.hero {
+    position: relative;
+    height: calc(100vh - 8.5rem); 
+    background: url('../images/bg-banner.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.narration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: relative;
+    z-index: 2;
+}
+.title h1{
+    margin-bottom: 1rem;
+}
+.title h2{
+    font-weight: 400;
+}
+.hero .overlay .row {
+    display: flex;
+    width: 100%;
+}
+
+.hero .overlay .row .col {
+    flex: 1;
+    height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .overlay .row .col a{
+    text-decoration: none;
+    color: #fff;
+}
+.hero .overlay .row .col a h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.hero .overlay .row .col a h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.hero .overlay .row .col:nth-child(1) {
+    background: rgba(0, 255, 242, 0.5);
+}
+
+.hero .overlay .row .col:nth-child(2) {
+    background: rgba(0, 102, 255, 0.5);
+}
+
+.hero .overlay .row .col:nth-child(3) {
+    background: rgba(0, 255, 34, 0.5);
+}
+.first-container {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-container {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-content {
+    width: 80%;
+}
+
+.homepage-content .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homepage-content .col {
+    flex: 1;
+    padding: 20px;
+}
+
+.homepage-content #content-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-content #content-col > * {
+    margin: 5px 0; 
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container .row .col h2 {
+    color: var(--yellow);
+    font-size: 1.4rem;
+}
+
+.container .row .col h3,
+.container .row .col p {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.homepage-content button {
+    background-color: var(--yellow);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.homepage-content button:hover {
+    background-color: var(--orange);
+}
+.first-container .col img{
+    width: 100%;
+    border: 2px solid #fff;
+    box-shadow: (0, 5, 5, 0.2);
+    border-radius: 10px;
+}
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0; 
+    background-color: var(--white);
+}
+
+.second-container .container {
+    width: 80%;
+}
+
+.second-container .title {
+    text-align: center;
+}
+
+.second-container .title .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.second-container .title .row span {
+    width: 80px;
+    height: 2px;
+    background-color: var(--orange);
+    margin: 0 10px;
+}
+.second-container .title h2{
+    font-size: 1.4rem;
+}
+.second-container .title h2, 
+.second-container .title h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.staff-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.staff-profile .col {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px; 
+}
+
+.staff-profile .col img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 15px;
+}
+
+
+.staff-profile .col h4 {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+.staff-profile .col p{
+    color: var(--black)!important;
+    font-size: 1.2rem;
+}
